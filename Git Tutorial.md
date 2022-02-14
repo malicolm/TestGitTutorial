@@ -1,5 +1,4 @@
 # Command-Line Git Tutorial 
-### A simple tutorial using your HelloWorld project.
 <br>
 
 ## Step One: Connect to your GitHub account
