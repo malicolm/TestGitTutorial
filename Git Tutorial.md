@@ -1,4 +1,6 @@
 # Command-Line Git Tutorial 
+
+This tutorial is for your HelloWorld project but the git skills can be used for any project in the future. 
 <br>
 
 ## Step One: Connect to your GitHub account
