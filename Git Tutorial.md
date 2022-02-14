@@ -19,7 +19,6 @@ Go to [GitHub](https://github.com/new) and create a new repository.
 
 Once the repository is created, copy the repository link - typically in the form:
 
-</br>
 
     https://github.com/YOUR_USERNAME/REPOSITORY_NAME.git
 
@@ -39,7 +38,7 @@ For example if your HelloWorld project folder is stored on your desktop you woul
     cd desktop
     cd HelloWorld
 
-Make sure only files that you want uploaded to GitHub are in the folder
+Make sure only files that you want uploaded to GitHub are in the folder.
     
 ## Step Four: Connect local project repository to GitHub
 
@@ -78,13 +77,38 @@ Now, if you go to your github repository you should see all of the files that we
 
 ## Later project changes
 
-Whether you are modifying existing files or adding new ones, making changes to your project can be made easier with the use of stashes, branches, and merging.
+Whether you are modifying existing files or adding new ones, making changes to your project can be made easier with the use of pushing, pulling, stashes, branches, and merging.
+
+</br>
+
+## General project updating
+
+When you want to make changes and push them to GitHub there are a few useful commands, some of which we already used to intially set up the repository.
+
+Once changes are made to a file, if you want to push those changes to git hub you must first add the file to be staged by typing:
+
+    git add filename.filetype
+
+Then, assuming you have added all of the files you want to commit you should commit your changes by typing:
+
+    git commit -m "commit message"
+
+To push those changes to GitHub type:
+
+    git push
+
+To pull new changes made by others or pull old changes type:
+
+    git pull
+
+
+
 
 </br>
 
 ## Stashing
 
-Stashing is useful if you want to clear your working tree, to pull new changes or move to a different branch but save your unfinished(not ready to be commit) changes for later. 
+Stashing is useful if you want to clear your working tree, to pull new changes or move to a different branch but save your unfinished(not ready to be committed) changes for later. 
 
 In order for changes to be stashed they must first be staged using:
 
@@ -151,21 +175,10 @@ If you want to merge two branches together that you are not in type:
 
 When merging, if there are no merge conflicts youre good to go, however if there are conflicts you will have to go into your text editor and choose which changes you want to keep.  
 
-## General project updating
+</br>
 
-When you want to make changes and push them to GitHub there are a few useful commands, some of which we already used to intially set up the repository.
-
-Once changes are made to a file, if you want to push those changes to git hub you must first add the file to be staged by typing:
-
-    git add filename.filetype
-
-Then, assuming you have added all of the files you want to commit you should commit your changes by typing:
-
-    git commit -m "commit message"
-
-To push those changes to GitHub type
-
-    git push
+## More
+These commands are enough to get the ball rolling but git has the power to do more. For more documentation on useful commands to view, store, edit, and share code in git, check out the full git [documentation](https://git-scm.com/docs).
 
 
 
