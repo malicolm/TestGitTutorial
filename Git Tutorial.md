@@ -13,7 +13,7 @@ followed by:
 
      git config --global user.password "password"
 
-replacing "username" and "password" with you current GitHub username and password, respectively. 
+replacing "username" and "password" with you current GitHub username and password, respectively. This is done to store your github credentials on your device.
 
 ## Step Two: Create a respository
 
@@ -33,7 +33,7 @@ Using the command line command:
 
     cd
 
-navigate through the folders on your local computer until you are in the root directory of the hangman project. 
+navigate through the folders on your local computer until you are in the root directory of the project. 
 
 For example if your HelloWorld project folder is stored on your desktop you would write: 
 
@@ -50,25 +50,31 @@ Assuming you have navigated to the project directory, in your commandline type:
 
     git init
 
+to initize a new, empty repository.
+
 followed by:
     
     git remote add origin https://github.com/YOUR_USERNAME/REPOSITORY_NAME.git
 
- and 
+ which connects the newly created (command line) empty repository to the (gitbhub.com) one created in step two.
+
+ then type: 
     
     git add .
 
-The git add . adds all files that have been changed since the last push in the directory to be "staged". 
+The git add . adds all files that have been changed since the last push in the directory to be "staged". Staged files can still be unstaged and edited. Staging is used as a midway point before committing the changes to your local repository.
 
 Alternatively, if you want to add specific individual files you can type
 
     git add filename.filetype
 
-Next, you need to commit those changes by typing
+Next, you need to commit those changes by typing:
 
     git commit -m "message about changes"
 
-then,
+committing does not publish the changes online, rather it stores them in your local repository. 
+
+then, to publish your local changes to github, type:
 
     git branch -M main
     git push -u origin main
@@ -85,9 +91,9 @@ Whether you are modifying existing files or adding new ones, making changes to y
 
 ## General project updating
 
-When you want to make changes and push them to GitHub there are a few useful commands, some of which we already used to intially set up the repository.
+When you want to make changes and push them to GitHub there are a few useful commands, some of which we already used to intially set up the repository. 
 
-Once changes are made to a file, if you want to push those changes to git hub you must first add the file to be staged by typing:
+Once changes are made to a file, if you want to push those changes to github you must first add the file to be staged by typing:
 
     git add filename.filetype
 
